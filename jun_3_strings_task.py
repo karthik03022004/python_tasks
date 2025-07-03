@@ -1,4 +1,4 @@
-'''            Check whether the char is lower,upper,number using function
+'''            Check whether the char is lower,upper,number using function'''
 
 def check_char(char_acter):
     code=ord(char_acter)
@@ -11,7 +11,7 @@ def check_char(char_acter):
     else:
         print("It's an other character")
 char_acter=input("enter charcter:")
-check_char(char_acter)'''
+check_char(char_acter)
 
 '''                      (hello-hfllp)write function to convert vowel char into next char'''
 def encode_decode(s):
