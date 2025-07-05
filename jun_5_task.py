@@ -10,6 +10,7 @@ if(big % small ==0):
 lcm_found=False
 lcm=big
 while lcm_found==False:
+    
     if(lcm%n1==0 and lcm%n2==0):
         print("lcm:",lcm)
         lcm_found=True
