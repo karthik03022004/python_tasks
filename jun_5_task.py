@@ -36,3 +36,24 @@ while lcm_found==False:
 # (11,13)lcm=143
 # 11=11,22,33,44,55,66,77,8,99,110,121,132,143..,
 # 13=13,26,39 52,65,78,91,104,117,130,143..
+n1,n2=500,7676
+big=0
+small=0
+if(n1>n2):
+    big=n1
+    small=n2
+else:
+    big=n2
+    small=n1
+if(big%small==0):
+    print("lcm:",big)
+else:
+    lcm_found=False
+    lcm=big
+    while(lcm_found==False):
+        if(lcm%n1==0 and lcm%n2==0):
+            print("lcm:",lcm)
+            lcm_found=True
+        else:
+            lcm+=big
+
