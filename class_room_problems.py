@@ -11,6 +11,20 @@ def longest_word(s):
 s=input()
 longest_word(s)'''
 
+'''  FIND SUBSTRING IN MAIN STRING 
+s1=input()# charan
+substr=input()#ran
+l=len(substr)
+found=False
+for i in range(len(s1)):
+    if(s1[i:i+l]==substr):
+        found=True
+        break
+if(found==True):
+    print("substr is there")
+else:
+    print("no substr")'''
+
 
 '''               alternate strings combine in a string'''
 # s1="13579" 0,1,2,3,4
@@ -95,7 +109,6 @@ print(new)'''
 # else:
 #     print(num)
 
-
 # round()-> it round off nearest value
 # print(round(6.46678,3))
 
@@ -157,24 +170,57 @@ print(new)'''
 
 # 153=(1**3)+(5**3)+(3**3)=1+125+27=153
 
-for i in range(1,501):
-    num=i
-    s=str(num)
-    cnt=len(s)
-    total=0
-    while(num>=1):
-        last_digit=num%10
-        total+=pow(last_digit,cnt)
-        num=num//10
-    if(total==i):
-        print("armstrong:",i)
+# for i in range(1,501):
+#     num=i
+#     s=str(num)
+#     cnt=len(s)
+#     total=0
+#     while(num>=1):
+#         last_digit=num%10
+#         total+=pow(last_digit,cnt)
+#         num=num//10
+#     if(total==i):
+#         print("armstrong:",i)
         
     
+# conversion
+# ------------jun9 problemsolving
+# anagrams
+s1="dosa"
+s2="listen"
+if(len(s1)!=len(s2)):
+    print("not anagrams")
+else:
+    # anagram_not_found=True
+    # for i in range(len(s1)): 0,1,2,3
+    #     if(s1.count(s1[i])!=s2.count(s2[i])):
+    #         anagram_not_found=False
+    #         break
+    # if(anagram_not_found==True):
+    #     print("yes anagram")
+    # else:
+    #     print("not anagram")
+    '''
+    cnt=0
+    for i in s1: # i n s t a
+        if(s1.count(i)==s2.count(i)):
+            cnt+=1
+    if(cnt==len(s1)):
+        print("angram")
+    else:
+        print("not anaragam")'''
+    
+
+
+
+
 
 
     
 
-# conversion
+
+
+
 
 
 
