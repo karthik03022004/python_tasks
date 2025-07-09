@@ -31,15 +31,47 @@ for i in range(len(itr)):
         new+=itr[i]
 print(new)'''
 
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+# rows=5
+# for i in range(1,rows+1):
+#     pat=""
+#     for j in range(1,i+1):
+#         pat+="*"+" "
+#     print(pat)
+# 
+# 
+# 
+# 
+# 
+
 
 # * * * * * 
 # *
 # * * * * *
 #         *
 # * * * * * 
+# rows=5
+# mid=(rows//2)+1
+# for i in  range(1,rows+1):
+#     pat=""
+#     for j in range(1,rows+1):
+#         if(i<=mid):
+#             if(i==1 or j==1 or i==mid):
+#                 pat+="*"+" "
+#             else:
+#                 pat+=" "+" "
+#         else:
+#             if(i==rows or j==rows):
+#                 pat+="*"+" "
+#             else:
+#                 pat+=" "+" "
+#     print(pat)
 
 
- 
     
 # rfind()->return last ouccurance of index
 
@@ -120,18 +152,27 @@ print(new)'''
 #     print("not armstrong")
 # '''
 
-for i in range(1,1000):
+
+# armstrong number :Armstrong number is a number where the digits, when raised to a power of cnt of digits and added together, give the same number.
+
+# 153=(1**3)+(5**3)+(3**3)=1+125+27=153
+
+for i in range(1,501):
     num=i
-    dup=i
-    s=str(i)
+    s=str(num)
     cnt=len(s)
     total=0
-    while(num!=0):
+    while(num>=1):
         last_digit=num%10
         total+=pow(last_digit,cnt)
-        num//=10
-    if(total==dup):
-        print("armstrong",i)
+        num=num//10
+    if(total==i):
+        print("armstrong:",i)
+        
+    
+
+
+    
 
 # conversion
 
