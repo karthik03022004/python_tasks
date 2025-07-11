@@ -184,32 +184,58 @@ print(new)'''
         
     
 # conversion
-# ------------jun9 problemsolving
+
+
+
+
+
+
+# ------------jun9 problemsolving-----------------
 # anagrams
 s1="dosa"
-s2="listen"
+s2="soda"
 if(len(s1)!=len(s2)):
     print("not anagrams")
 else:
-    # anagram_not_found=True
-    # for i in range(len(s1)): 0,1,2,3
-    #     if(s1.count(s1[i])!=s2.count(s2[i])):
-    #         anagram_not_found=False
-    #         break
-    # if(anagram_not_found==True):
-    #     print("yes anagram")
-    # else:
-    #     print("not anagram")
-    '''
-    cnt=0
-    for i in s1: # i n s t a
-        if(s1.count(i)==s2.count(i)):
-            cnt+=1
-    if(cnt==len(s1)):
-        print("angram")
+    cnt=0# intially taking cnt=0 to count common char
+    for i in s1: # membership function i= l,i,s,t,e,n
+        if(s1.count(i)==s2.count(i)): #l-1 i-1 s-1 t-1 e-1 n-1
+            cnt+=1 #1 2 3 4
+    if(cnt==len(s1)):#4=4
+        print(s1,s2,"are angrams")
     else:
-        print("not anaragam")'''
-    
+        print(s1,s2," are not anaragams")
+
+'''            jun10 problemsolving'''
+
+# find longest palindrome in a word
+word="malayalam"
+longest=""
+for i in range(len(word)):
+    temp=""
+    for j in range(i,len(word)):
+        temp+=word[j]
+        if(temp==temp[::-1] and len(longest)<len(temp)):
+            longest=temp
+print(longest)
+
+# count and print no of palindromes in a word
+word="malayali"
+cnt=0
+for i in range(len(word)):
+    temp=""
+    for j in range(i,len(word)):
+        temp+=word[j]
+        if(temp==temp[::-1] and len(temp)!=1):
+            cnt+=1
+            print(temp)
+print(cnt)
+
+# shortest palindrome
+
+
+
+
 
 
 

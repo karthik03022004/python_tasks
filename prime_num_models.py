@@ -84,5 +84,7 @@ else:
     print(prev_prime,n,next_prime,"are same distance")
 
 
+
+
     
         
