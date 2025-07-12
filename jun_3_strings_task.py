@@ -162,3 +162,4 @@ print(f"my name is :{name} graduated from {edu} in {year} with {8.3} CGPA")
 
 # 40. Use % operator to format a string.
 print("my name is %s and completed my %s in year %d with %f CGPA."%(name,edu,year,marks))
+
