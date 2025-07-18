@@ -242,6 +242,23 @@ for i in range(1,rows+1):
 
 # # shortest palindrome
 
+s="ABBBBB" #output:a5b2c3
+i=0
+res=""
+while(i<len(s)):
+    cnt=1
+    
+    for j in range(i,len(s)-1):
+        if(s[j]==s[j+1]):
+            cnt+=1
+        else:
+            break
+    res+=s[j]+'-'+str(cnt)+" "
+    i+=cnt
+    
+  
+
+print(res)   
 
 
 
