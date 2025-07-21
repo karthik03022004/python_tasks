@@ -132,7 +132,7 @@ Expected Output:
     *      5  1   4
 
 '''
-for i in range
+
 
 
 # 8. Parallelogram Pattern
