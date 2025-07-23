@@ -20,7 +20,7 @@ Expected Output:
 '''
 N=4
 for i in range(1,N+1):
-    stars='* '*N
+    stars="* "*N
     print(stars)
 
 # 2. Rectangle Star Pattern
@@ -92,9 +92,8 @@ Expected Output:
 *
 '''
 N=4
-rows=N
-for i in range(N):
-    print('* '*(rows-i))
+for i in range(N,0,-1):
+    print("* " *i)
     
 # 6. Inverted Right-Aligned Right Angle Triangle
 '''
@@ -132,6 +131,7 @@ Expected Output:
     *      5  1   4
 
 '''
+
 
 
 
