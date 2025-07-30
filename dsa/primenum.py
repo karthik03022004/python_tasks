@@ -23,3 +23,40 @@ for i in range(len(s)):
         l.append(s[i])
         l.append(cnt)
 print(l)
+# ------------------------------------------
+# class room problems
+def add2num(a,b):
+    return a+b
+print(f"sum of 2 numbers using function:{add2num(2,3)}")
+# ---------------------------------
+def even_or_odd(n):
+    if(n&1==0):
+        return "even"
+    return "odd"
+print(even_or_odd(9))
+# --------------------------------
+def leap_year(year):
+    if(year%400==0 or (year%4==0 and year%100!=0)):
+        return True
+    return False
+cnt=0
+for i in range(2000,2026):
+    if(leap_year(i)):
+        cnt+=1
+        print(i,end=", ")
+print(cnt)
+# -------------------------------
+def prime(num):
+    factors=0
+    for i in range(2,(num//2)+1):
+        if(num%i==0):
+            factors+=1
+            break
+    if(factors==0):
+        if(num!=1):
+            return True
+    return False
+for j in range(1,51):
+    if(prime(j)):
+        print(j,end=", ")
+# ---------------------------------------

@@ -230,8 +230,64 @@ if(mul_check):
             row.append(res)
         print(row)
 '''--------------------------------------------------'''
-    
-            
+# chai sir probsolpratice
+l=[1,2,3,4,5]
+print("3rd elemnt",l[2])
+# ---------
+l[1]=9
+print(l)
+# -------
+l.append(6)
+print(l)
+# --------------
+l.insert(1,12)
+print(l)
+# ---
+l.remove(9)
+print(l)
+# ---------- remove val by index
+l.pop(0)
+print(l)
+# ------
+print(len(l))
+# --------  chacking ele exist in list or not
+exist=False
+e=7
+for i in l:
+    print(i)
+    if i==e:
+        exist=True
+        break
+print(exist)
+# ------------ sort
+l1=[2,8,9,5,6,4,3]
+l1.sort()
+print(l1)
+# -----------------
+l1.sort(reverse=True)
+print(l1)
+# -----------------
+l1.reverse()
+print(l1)
+# ------------
+l1=l1[::-1]
+print(l1)
+# --------------
+l2=l1[0::2]
+print(l2)
+# ------------
+l2=l1.copy()
+print(l2)
+l3=[[1,2,3],4,5,6]
+l2=l3.copy()
+print(l2)
+l2[0][1]=4
+print(l2)
+print(l3)
+# --------shallow copy-> if you change any val in  the new copy list it can change in orginal lsit bcz both share same list
+# ----------
+l2.clear()
+print(l2)
 
 
 
