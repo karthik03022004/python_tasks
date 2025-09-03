@@ -110,7 +110,7 @@ Fibonacci Series: 0 1 1 2 3
 def fib(n):
     if(n==1 or n==0):
         return 0
-    if(n==2):
+    elif(n==2):
         return 1
     return fib(n-1)+fib(n-2)
 print(fib(5))
@@ -138,7 +138,17 @@ Output:
 Reversed Number = 4321
 '''
 
+def reverse(n,rev):
+    if rev==0:
+        return s[rev]
+    return s[rev]+reverse(n,rev-1)
 
+
+n=1234
+s=str(n)
+rev=len(s)-1
+ans=reverse(s,rev)
+print(type(int(ans)))
 '''
 Problem: Write a recursive function to check if a string is a palindrome.
 Explanation: Compare first and last characters and recurse on the substring.
@@ -147,5 +157,14 @@ Enter string: madam
 Output:
 The string is a palindrome.
 '''
+
+def p(s,i):
+    if(i==0):
+        return s[i]
+    return s[i]+p(s,i-1)
+
+s="malayalam"
+i=len(s)-1
+print(p(s,i)==s)
 
 

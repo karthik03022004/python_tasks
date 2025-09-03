@@ -24,6 +24,10 @@
 #     print(stars)
 
 # # 2. Rectangle Star Pattern
+n=4
+for i in range(1,n+1):
+    stars="* "*n
+    print(stars)
 # '''
 # Question:
 # Write a Python program to print a rectangle pattern of stars with R rows and C columns.
@@ -36,10 +40,13 @@
 # * * * * *
 # * * * * *
 # '''
-# R,C=3,5
+R,C=3,5
 # for i in range(1,R+1):
 #     stars='* '*C
 #     print(stars)
+for i in range(1,R+1):
+    stars="* "*C
+    print(stars)
 # # 3. Left-Aligned Right Angle Triangle
 # '''
 # Question:
@@ -58,6 +65,10 @@
 # for i in range(1,N+1):
 #     stars='* '*i
 #     print(stars)
+n=4
+for i in range(1,n+1):
+    stars="* "*i
+    print(stars)
 # # 4. Right-Aligned Right Angle Triangle
 # '''
 # Question:
@@ -71,6 +82,11 @@
 #     * *
 #   * * *
 # * * * *
+N=4
+for i in range(1,n+1):
+    sp="  "*(N-i)
+    stars="* "*i
+    print(sp+stars)
 # '''
 # N=4
 # for i in range(1,N+1):
@@ -94,6 +110,8 @@
 # N=4
 # for i in range(N,0,-1):
 #     print("* " *i)
+
+
     
 # # 6. Inverted Right-Aligned Right Angle Triangle
 # '''
@@ -131,7 +149,17 @@
 #     *      5  1   4
 
 # '''
-
+n=5
+s=1
+mid=(n//2)+1
+for i in range(1,n+1):
+    if(i<=mid):
+      sp=" "*(n-i)
+      stars="* "*s
+      s+=2
+      print(sp+stars)
+    
+    
 
 
 

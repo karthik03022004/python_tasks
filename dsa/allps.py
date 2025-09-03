@@ -26,8 +26,8 @@
 
 
 # Interview-Style Programming Questions: Basic Math and Logic
-# ________________________________________
-# 1. Area of Square
+# ___                        problemsoving1_____________________________________
+#  1. Area of Square
 # Question: Calculate the area of a square. - Formula: Area = side × side - Input: - Side = 5 - Output: - Area of square is: 25
 def area(side):
     return side*side
@@ -66,12 +66,26 @@ print("perimeter of tri:",p_tri(5,6,7))
 # ________________________________________
 # 7. Break Amount into 1000s, 500s, and Remaining Change
 # Question: Break the total amount into denominations. - Input: - Amount = 3700 - Output: - 1000s: 3 - 500s: 1 - Remaining: 200
-
+def change(amount):
+    s1000=amount//1000
+    amount=amount%1000
+    s500=amount//500
+    amount=amount%500
+    return s1000,s500,amount
+print(change(3700))
 
 
 # ________________________________________
 # 8. Convert Seconds into Hours, Minutes, and Seconds
 # Question: Convert total seconds into hours, minutes, and seconds. - Input: - Total seconds = 3672 - Output: - Hours: 1 - Minutes: 1 - Seconds: 12
+def convert(sec):
+    hrs=sec//3600
+    sec=sec%3600
+    min=sec//60
+    sec=sec%60
+    return hrs,min,sec
+print(convert(3672))
+
 # ________________________________________
 # 9. Sum of Marks (Maths, Physics, Chemistry)
 # Question: Calculate the sum of marks in 3 subjects. - Input: - Maths = 85 - Physics = 90 - Chemistry = 88 - Output: - Total marks: 263
@@ -81,8 +95,9 @@ print(sum_marks(85,90,88))
 # ________________________________________
 # 10. Average of Marks (Maths, Physics, Chemistry)
 # Question: Calculate the average of marks in 3 subjects. - Input: - Maths = 85 - Physics = 90 - Chemistry = 88 - Output: - Average marks: 87.67
-
-
+def average(m,p,c):
+    return (m+p+c)/3
+print("average:",average(85,90,88))
 
 # n=21
 # res=0
@@ -568,7 +583,7 @@ print(prime,comp)
 #         row+=str(j1)+" "
 #     print(row)                             34
 # -----------------------------------------------------
-'''         problem solving 3'''
+
 
 
 

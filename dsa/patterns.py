@@ -115,15 +115,122 @@ for i in range(1,rows+1):
 #     stars='* '*i
 #     print(sp+stars)
 #     i-=1
-rows=5
-for i in range(1,2*rows):
-    if(i<=rows):
-        sp=' '*(rows-i)
-        stars='* '*(i)
-        print(sp+stars)
-    else:
-        sp=' '*(i-rows)
-        stars='* '*(2*rows-i)
-        print(sp+stars)
+# rows=5
+# for i in range(1,2*rows):
+#     if(i<=rows):
+#         sp=' '*(rows-i)
+#         stars='* '*(i)
+#         print(sp+stars)
+#     else:
+#         sp=' '*(i-rows)
+#         stars='* '*(2*rows-i)
+#         print(sp+stars)
 '''---------------------------------------------------'''
+# PS-2
+# 1)
+'''
+Output:
+* * * *
+* * * *
+* * * *
+* * * *
+'''
+n=4
+for i in range(1,n+1):
+    print("* " *n)
+'''2
+Input: m = 3, n = 5
+Output:
+* * * * *
+* * * * *
+* * * * *
+'''
+m=3
+n=5
+for i in range(1,m+1):
+    print("* "*n)
+'''3
+*
+* *
+* * *
+* * * *
+* * * * *
+'''
+for i in range(1,n+1):
+    print("* " *i)
+# for i in range(1,n+1):
+#     pat=""
+#     for j in range(1,i+1):
+#         pat+="* "
+#     print(pat)
+'''4
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+'''
+for i in range(1,n+1):
+    sp="  "*(n-i)
+    stars="* "*(i)
+    print(sp+stars)
+'''5
+Output:
+* * * * *
+* * * *
+* * *
+* *
+*
+'''
+print("----------")
+for i in range(n,0,-1):
+    stars="* "*i
+    print(stars)
+'''6
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
+'''
+print("----------")
+for i in range(n,0,-1):
+    sp="  "*(n-i)
+    stars="* "*i
+    print(sp+stars)
+'''7
+      *
+    * * *
+  * * * * *
+* * * * * * *
+'''
+print("-------------")
+n=4
+num=1
+for i in range(1,n+1):
+    sp='  '*(n-i)
+    stars="* "*(num)
+    num+=2
+    print(sp+stars)
+'''
+Output:
+    *
+  * * *
+* * * * *
+  * * *
+    *
+'''
+n=3
+num=1
+for i in range(1,n+1):
+    sp='  '*(n-i)
+    stars='* '*(num)
+    num+=2
+    print(sp+stars)
+num=1
+for i in range(n,0,-2):
+    sp='  '*num
+    num+=1
+    stars="* "*i
+    print(sp+stars)
 
