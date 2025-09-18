@@ -163,8 +163,42 @@ else:
         print("nearest:",r)
     else:
         print("nearest:",l)
+# --------------------------
+# check power of 2 
+n=512
+found=False
+for i in range((n//2)+1):
+    if(2**i==n):
+        found=True
+        break
+    else:
+        found=False
+print(i,found)
 
-        
+import math
+val=math.log(n,2)
+print(isinstance(val,float))
+
+if(n & (n-1)==0):
+    print(True)
+else:
+    print(False)
+# sc=O(1)
+# tc=O(1)
+# --------------
+# x power y using recursion
+def ps(x,y):
+    
+    if(y==0):
+        return 1
+    elif(y<0):
+        return (1/ps(x,-y))
+    return x*ps(x,y-1)
+x,y=2,-3
+
+# x,y=int(input())
+print(ps(2,-3))
+
 
 
 

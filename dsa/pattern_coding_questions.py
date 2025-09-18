@@ -18,11 +18,11 @@
 # * * * *
 # * * * *
 # '''
-# N=4
-# for i in range(1,N+1):
-#     stars="* "*N
-#     print(stars)
-
+N=4
+for i in range(1,N+1):
+    stars="* "*N
+    print(stars)
+ 
 # # 2. Rectangle Star Pattern
 n=4
 for i in range(1,n+1):

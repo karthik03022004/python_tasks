@@ -1,4 +1,22 @@
-# binary serach :
+# binary search
+l=[10,20,30,30,30,40]  #t=30
+
+# arr=[10,20,30,40,50]
+# t=40
+# i=0
+# j=len(arr)-1
+# while(i<=j):
+#     mid=(i+j)//2
+#     if(arr[mid]==t):
+#         print(mid)
+#         break
+#     elif(arr[mid]>t):
+#         j=mid+1
+#     else:
+#         i=mid+1
+
+
+# binary serach  by returning first index and last index of target:
 def first_ele(l,t):
     i=0
     j=len(l)-1
@@ -33,3 +51,8 @@ l=[1,2,3,3,3,4] #output:2(first 3 ) and 4(last 3)
 t=3
 print(first_ele(l,t))
 print(last_ele(l,t))
+
+
+
+
+

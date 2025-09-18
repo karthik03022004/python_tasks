@@ -31,20 +31,8 @@
 #         swaps+=1
 #         j-=1
 # print("insertion sort:",l,swaps)
+
 # # binary search
-# arr=[10,20,30,40,50]
-# t=40
-# i=0
-# j=len(arr)-1
-# while(i<=j):
-#     mid=(i+j)//2
-#     if(arr[mid]==t):
-#         print(mid)
-#         break
-#     elif(arr[mid]>t):
-#         j=mid+1
-#     else:
-#         i=mid+1
 
 
 
